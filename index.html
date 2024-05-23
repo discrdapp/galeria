@@ -10,12 +10,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div id="container">
-        <div id="pomoc"></div>
-        <div class="przycisk" id="lewo"></div>
+        <div id="przyciemnienie"></div>
+        <div id="pomocPrzycisk">
+            <i class="fa-solid fa-question"></i>
+        </div>
+        <div id="pomoc">
+            <div id="pomocTekst">
+                <h1>Pomoc</h1>
+                <div>Aby polubić zdjęcie można:
+                    - kliknąć przycisk z serduszkiem
+                    - przewinąć w prawo zdjęcia.</div>
+            </div>
+            <div id="zamknijPomoc">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
         <div class="wszystkieZdj">
             <div class="maleZdjContainer">
                 <div class="maleZdj all"></div>
@@ -30,7 +46,18 @@
                 <div class="duzeZdj all"></div>
             </div>
         </div>
-        <div class="przycisk" id="prawo"></div>
+        <div class="przyciskiContainer">
+            <div class="przycisk lewy" id="lewy">
+                <div class="srodek srodekLewy">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="przycisk prawy" id="prawy">
+                <div class="srodek srodekPrawy">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+        </div>
         <div id="nazwa"></div>
     </div>
 
